@@ -55,6 +55,35 @@ This will start both:
 - Start only the GraphQL server: `npm run server`
 - Build for production: `npm run build`
 
+## Testing
+
+The project includes comprehensive testing with Jest, React Testing Library, and Apollo Client testing utilities.
+
+### Running Tests
+
+```bash
+# Run all tests
+npm test
+
+# Run tests in watch mode
+npm run test:watch
+
+# Run tests with coverage
+npm run test:coverage
+
+# Run specific test file
+npm test -- --testPathPatterns=calculations.test.ts
+```
+
+### Test Coverage
+
+- **Utility Functions**: 100% coverage for calculation and formatting functions
+- **Component Tests**: Tests for all major components including user interactions
+- **GraphQL Integration**: Mocked GraphQL operations for testing data flow
+- **User Interactions**: Tests for filtering, pagination, and form submissions
+
+For detailed testing documentation, see [TESTING.md](./TESTING.md).
+
 ## Project Structure
 
 ```
